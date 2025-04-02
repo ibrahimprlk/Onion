@@ -1,5 +1,6 @@
 ﻿using Application.Features.Products.Queries.GetAllProducts;
 using Application.Interfaces.UnitOfWorks;
+using Azure.Core;
 using Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -19,9 +20,9 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet("[action]")]
-        public async Task<IActionResult> Get(GetAllProductsQueryRequest request)
+        public async Task<IActionResult> Get()
         {
-            var response = await mediator.Send(request);
+            var response = await mediator.Send(new GetAllProductsQueryRequest());
             return Ok(response);
         }
     }
