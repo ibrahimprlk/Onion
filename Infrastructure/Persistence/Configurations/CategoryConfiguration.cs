@@ -20,7 +20,7 @@ namespace Persistence.Configurations
                 Priorty = 1,
                 ParentId = 0,
                 IsDeleted = false,
-                CreatedDate = DateTime.Now,
+              //  CreatedDate = DateTime.Now,
             };
 
             Category category2 = new()
@@ -30,7 +30,7 @@ namespace Persistence.Configurations
                 Priorty = 2,
                 ParentId = 0,
                 IsDeleted = false,
-                CreatedDate = DateTime.Now,
+            //    CreatedDate = DateTime.Now,
             };
 
             Category parent1 = new()
@@ -40,7 +40,7 @@ namespace Persistence.Configurations
                 Priorty = 1,
                 ParentId = 1,
                 IsDeleted = false,
-                CreatedDate = DateTime.Now,
+             //   CreatedDate = DateTime.Now,
             };
 
             Category parent2 = new()
@@ -50,7 +50,7 @@ namespace Persistence.Configurations
                 Priorty = 1,
                 ParentId = 2,
                 IsDeleted = false,
-                CreatedDate = DateTime.Now,
+             //   CreatedDate = DateTime.Now,
             };
 
             builder.HasData(category1, category2, parent1, parent2);

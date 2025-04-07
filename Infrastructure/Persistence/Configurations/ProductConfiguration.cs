@@ -24,7 +24,7 @@ namespace Persistence.Configurations
                 BrandId = 1,
                 Discount = faker.Random.Decimal(0, 10),
                 Price = faker.Finance.Amount(10, 1000),
-                CreatedDate = DateTime.Now,
+              //  CreatedDate = DateTime.Now,
                 IsDeleted = false,
             };
             Product product2 = new()
@@ -35,7 +35,7 @@ namespace Persistence.Configurations
                 BrandId = 3,
                 Discount = faker.Random.Decimal(0, 10),
                 Price = faker.Finance.Amount(10, 1000),
-                CreatedDate = DateTime.Now,
+          //      CreatedDate = DateTime.Now,
                 IsDeleted = false,
             };
 

@@ -22,7 +22,7 @@ namespace Persistence.Configurations
                 Title = faker.Lorem.Sentence(1),
                 Description = faker.Lorem.Sentence(5),
                 CategoryId = 1,
-                CreatedDate = DateTime.Now,
+              //  CreatedDate = DateTime.Now,
                 IsDeleted = false,
             };
             Detail detail2 = new()
@@ -31,7 +31,7 @@ namespace Persistence.Configurations
                 Title = faker.Lorem.Sentence(2),
                 Description = faker.Lorem.Sentence(5),
                 CategoryId = 3,
-                CreatedDate = DateTime.Now,
+            //    CreatedDate = DateTime.Now,
                 IsDeleted = true,
             };
             Detail detail3 = new()
@@ -40,7 +40,7 @@ namespace Persistence.Configurations
                 Title = faker.Lorem.Sentence(1),
                 Description = faker.Lorem.Sentence(5),
                 CategoryId = 4,
-                CreatedDate = DateTime.Now,
+            //    CreatedDate = DateTime.Now,
                 IsDeleted = false,
             };
 

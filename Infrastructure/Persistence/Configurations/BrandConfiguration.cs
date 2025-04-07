@@ -22,14 +22,14 @@ namespace Persistence.Configurations
             {
                 Id = 1,
                 Name=faker.Commerce.Department(),
-                CreatedDate = DateTime.Now,
+              //  CreatedDate = DateTime.Now,
                 IsDeleted = false,
             };
             Brand brand2 = new()
             {
                 Id = 2,
                 Name = faker.Commerce.Department(),
-                CreatedDate = DateTime.Now,
+               // CreatedDate = DateTime.Now,
                 IsDeleted = false,
             };
 
@@ -37,7 +37,7 @@ namespace Persistence.Configurations
             {
                 Id = 3,
                 Name = faker.Commerce.Department(),
-                CreatedDate = DateTime.Now,
+              //  CreatedDate = DateTime.Now,
                 IsDeleted = true,
             };
 
