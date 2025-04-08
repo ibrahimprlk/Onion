@@ -6,6 +6,7 @@ using Application.Interfaces.UnitOfWorks;
 using Azure.Core;
 using Domain.Entities;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,6 +24,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet("[action]")]
+        [Authorize]
         public async Task<IActionResult> GetAllProducts()
         {
             var response = await mediator.Send(new GetAllProductsQueryRequest());
